@@ -1,0 +1,66 @@
+header {
+    width: 100%;
+    height: 12.5rem;
+    display: flex;
+    flex-direction: row;
+    background-image: url('/assets/media/image/pexels-felixmittermeier-956999.jpg');
+    background:cover, no-repeat, border-box, scroll;
+    align-items: center;
+}
+
+.navigator {
+    width: 100%;
+    height: 12.5rem;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 0.625rem;
+}
+
+.navigator ul{ 
+    display: flex;
+    flex-direction: row;
+}
+
+.navigator ul li {
+    display: flex;
+    list-style: none;
+    padding: 30px;
+    margin: 10px;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.navigator ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #000000;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.navigator ul li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: 1s;
+    transform: perspective(1px) scale(1.1);
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+}
