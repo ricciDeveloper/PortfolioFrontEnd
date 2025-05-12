@@ -3,7 +3,7 @@ header {
     height: 12.5rem;
     display: flex;
     flex-direction: row;
-    background-image: url('/assets/media/image/pexels-felixmittermeier-956999.jpg');
+    background-image: url('../../media/image/pexels-felixmittermeier-956999.jpg');
     background:cover, no-repeat, border-box, scroll;
     align-items: center;
 }
