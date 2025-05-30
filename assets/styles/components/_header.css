@@ -1,66 +1,139 @@
+/* HEADER */
 header {
     width: 100%;
-    height: 12.5rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 1rem;
     background-image: url('../../media/image/pexels-felixmittermeier-956999.jpg');
-    background:cover, no-repeat, border-box, scroll;
-    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+    flex-wrap: wrap; /* para evitar quebra */
+    box-sizing: border-box;
 }
 
+/* NAVIGATION CONTAINER */
 .navigator {
-    width: 100%;
-    height: 12.5rem;
+    flex: 1;
     display: flex;
-    flex-direction: row;
-    margin: 1rem;
-    padding: 0.625rem;
-}
-
-.navigator ul{ 
-    display: flex;
-    flex-direction: row;
-}
-
-.navigator ul li {
-    display: flex;
-    list-style: none;
-    padding: 30px;
-    margin: 10px;
-    font-size: 1.5rem;
     justify-content: center;
-    align-items: center;
+    padding: 0.625rem;
+    box-sizing: border-box;
+}
+
+/* UL STYLING */
+.navigator ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* NAV ITEMS */
+.navigator ul li {
+    list-style: none;
+    font-size: 1.5rem;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.navigator ul li a {
+/* BUTTONS - LINKS */
+.navigator ul li a,
+.dropbtn {
+    height: 3rem;
+    width: 10rem;
     text-decoration: none;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px;
-    margin: 10px;
     border-radius: 15px;
     background-color: #000000;
     transition: 0.5s;
-    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navigator ul li a:hover {
+/* HOVER STATE */
+.navigator ul li a:hover,
+.dropbtn:hover {
     background-color: #ffffff;
     color: #000000;
-    transition: 1s;
-    transform: perspective(1px) scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
+/* DROPDOWN CONTAINER */
+.dropdown {
+    position: relative;
+}
+
+/* DROPDOWN MENU */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+/* SHOW ON HOVER */
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* DROPDOWN ITEMS */
+.dropdown-content li {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dropdown-content li:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.01);
+    border-radius: 10px;
+}
+
+.dropdown-content li img {
+    width: 20px;
+    height: 20px;
+}
+
+.dropdown-content li a {
+    color: #000;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: none;
+}
+
+/* PROFILE IMAGE */
 header img {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    padding: 20px;
-    margin: 20px;
+    margin-left: auto;
+    margin-right: 1rem;
+    object-fit: cover;
 }
