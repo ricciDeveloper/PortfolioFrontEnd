@@ -1,6 +1,7 @@
 /* Dropdown base */
 .dropdown {
-  position: relative;
+  display: none;
+  position: absolute;
 }
 
 /* Botão visível na navbar */
@@ -77,4 +78,18 @@
   color: #000;
   text-decoration: none;
   font-size: 1rem;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* seus outros estilos */
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
 }

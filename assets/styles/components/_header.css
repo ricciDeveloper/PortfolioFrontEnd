@@ -5,7 +5,7 @@ header {
     flex-direction: row;
     align-items: center;
     padding: 1rem;
-    background-image: url('../../media/image/pexels-felixmittermeier-956999.jpg');
+    background-image: url('../../media/image/pexels-felixmittermeier-956999.jpg')!important;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -136,4 +136,51 @@ header img {
     margin-left: auto;
     margin-right: 1rem;
     object-fit: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        align-items: center;
+    }
+    .navigator {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        padding: 0.02rem;
+        box-sizing: border-box;
+    }
+    .navigator ul {
+        align-items: center;
+    }
+
+    .navigator ul li a,
+    .dropbtn {
+        width: 100%;
+        text-align: center;
+    }
+
+    header img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+    }
+    .navigator ul li a,
+    .dropbtn {
+        height: 1rem;
+        width: 3.6rem;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 15px;
+        background-color: #000000;
+        transition: 0.5s;
+        font-size: 0.4rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
 }

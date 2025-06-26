@@ -19,3 +19,24 @@ main p {
   text-align: center;
   margin: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  main {
+    padding: 10px;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+  
+}
