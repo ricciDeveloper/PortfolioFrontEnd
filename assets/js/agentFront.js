@@ -1,12 +1,19 @@
 const input = document.getElementById("userAgent");
 const button = document.getElementById("response");
-const respostaDiv = document.getElementById("pResponse");
+const chatBox = document.getElementById("pResponse");
 
 button.addEventListener("click", async () => {
     const pergunta = input.value.trim();
     if (!pergunta) return;
 
-    respostaDiv.innerHTML = "<p><em>Carregando resposta...</em></p>";
+    // Adiciona a mensagem do usuário ao chat
+    const userMessage = document.createElement("div");
+    userMessage.className = "user-message";
+    userMessage.innerText = pergunta;
+    chatBox.appendChild(userMessage);
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+    input.value = "";
 
     try {
         const res = await fetch("http://localhost:3000/ask", {
@@ -18,14 +25,26 @@ button.addEventListener("click", async () => {
         });
 
         if (!res.ok) {
-            respostaDiv.innerHTML = `<p><em>Erro:</em> ${res.status} - ${res.statusText}</p>`;
-            throw new Error("Erro ao obter resposta do servidor.");
+            throw new Error("Erro ao conectar com a API.");
         }
 
         const data = await res.json();
-        respostaDiv.innerHTML = `<p>${data.resposta}</p>`;
+
+        const agentResponse = document.createElement("div");
+        agentResponse.className = "agent-response";
+        agentResponse.innerText = data.resposta;
+
+        chatBox.appendChild(agentResponse);
+        chatBox.scrollTop = chatBox.scrollHeight;
+
     } catch (error) {
-        respostaDiv.innerHTML = `<p><strong>Erro:</strong> Falha ao conectar com a API.</p>`;
-        console.error("Erro de conexão:", error);
+        const errorResponse = document.createElement("div");
+        errorResponse.className = "agent-response";
+        errorResponse.innerText = "Erro ao conectar com o servidor.";
+
+        chatBox.appendChild(errorResponse);
+        chatBox.scrollTop = chatBox.scrollHeight;
+
+        console.error("Erro: ", error);
     }
 });
