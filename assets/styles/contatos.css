@@ -1,3 +1,7 @@
 @import url('components/_header.css');
 @import url('components/_footer.css');
 @import url('components/_dropdown.css');
+
+main{
+    height: 80vh;
+}

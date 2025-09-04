@@ -1,40 +1,54 @@
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #333;
-    color: white;
+    width: 100%;
+    background-color: #1a1a1a; /* Fundo do rodapé */
+    color: #e0e0e0;
     padding: 20px;
     position: relative;
     bottom: 0;
     height: auto;
-  }
-  footer ul li img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-  
-  footer ul {
+    margin-top: 2rem;
+}
+
+footer ul {
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  footer ul li {
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+    justify-content: center;
+    gap: 1.5rem; /* Adiciona espaço entre os itens */
+}
+
+footer ul li {
     margin: 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-  }
-  footer ul li a {
-    color: white;
+}
+
+footer ul li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease;
-  }
-  
+}
+
+footer ul li a:hover {
+    color: #007bff;
+}
+
+.rightsReserve p {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 1rem; /* Espaço entre a lista e o texto de direitos autorais */
+}

@@ -32,10 +32,12 @@ João é um desenvolvedor backend em constante evolução, apaixonado por transf
 - Outros cursos: Design Gráfico, Informática, Gestão do Tempo
 
 **Principais Tecnologias e Ferramentas:**
+
 - Java: Spring Boot, Spring Security, Spring Data JPA, Swagger, Hibernate, Maven, JWT
 - Banco de Dados: MySQL, SQL
 - Python: Automação de processos com Pandas e PyAutoGUI
 - Frontend em desenvolvimento: HTML, CSS e JavaScript (nível iniciante, em aprendizado contínuo)
+- Trabalha atualmente com SEO, utiliznado habilidades de desenvolvimento WEB, Wordpress, VTEX IO, Google search console, Ahrefs, além de insgihts estratégicos para melhor posicionamento orgânico nas SERPs do Google.
 - Versionamento: Git e GitHub
 - Outros conhecimentos: Lógica de Programação, APIs RESTful, Deploy com Railway, testes com JUnit e Mockito.
 
