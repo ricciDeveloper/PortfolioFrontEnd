@@ -4,7 +4,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #1a1a1a; /* Fundo do rodapé */
+    background-color: #1a1a1a;
     color: #e0e0e0;
     padding: 20px;
     position: relative;
@@ -18,9 +18,9 @@ footer ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem; /* Adiciona espaço entre os itens */
+    gap: 1.5rem;
 }
 
 footer ul li {
@@ -50,5 +50,5 @@ footer ul li a:hover {
 .rightsReserve p {
     font-size: 0.8rem;
     color: #777;
-    margin-top: 1rem; /* Espaço entre a lista e o texto de direitos autorais */
+    margin-top: 1rem;
 }
