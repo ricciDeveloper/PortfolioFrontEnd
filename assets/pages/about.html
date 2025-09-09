@@ -1,123 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
-    <!-- Styles-->
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mim</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/about.css">
 </head>
 <body>
-     <header>
-        <nav class="navigator">
-            <ul>
-                <li><a href="../../Index.html">Home</a></li>
-                <li><a href="about.html">Sobre mim</a></li>
-                <li class="dropdown">
-                    <a href="assets/pages/projetos.html" class="dropbtn">PROJETOS</a>
-                    <div class="dropdown-content">
-                        <ul>
-                        <li>
-                            <img src="../media/image/icons/github-sign.png" alt="GitHub" />
-                            <a href="https://github.com/ricciDeveloper/SpringWebRestApi" target="_blank">Spring Web
-                                API</a>
-                        </li>
-                        <li>
-                            <img src="../media/image/icons/github-sign.png" alt="GitHub" />
-                            <a href="https://github.com/ricciDeveloper/APIRestSpringSecurity" target="_blank">Spring
-                                Security API</a>
-                        </li>
-                        <li>
-                            <img src="../media/image/icons/github-sign.png" alt="GitHub" />
-                            <a href="https://github.com/ricciDeveloper/AutomacaoRelatoriosPY" target="_blank">Automação
-                                Python</a>
-                        </li>
-                        <li>
-                            <img src="../media/image/icons/github-sign.png" alt="GitHub" />
-                            <a href="https://github.com/ricciDeveloper/Multiverso-SpiderMan" target="_blank">Spider-Man
-                                Multiverso</a>
-                        </li>
-                        <li>
-                            <img src="../media/image/icons/github-sign.png" alt="GitHub" />
-                            <a href="https://github.com/ricciDeveloper/API-ListaContatos" target="_blank">Lista
-                                Telefônica</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="contatos.html">Contatos</a></li>
-            </ul>
+  <header class="header">
+      <div class="header-container">
+        <a href="../../Index.html" class="logo">João Ricci</a>
+        <nav class="nav">
+          <ul>
+            <li><a href="../../Index.html">Home</a></li>
+            <li><a href="about.html">Sobre mim</a></li>
+            <li><a href="projetos.html" class="active">Projetos</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+          </ul>
         </nav>
-
-        "<img src="../media/image/perfil.jpg" alt=" perfil joão ricci">
+      </div>
     </header>
-    <main>
-        <div class="container">
-            <h1>Sobre mim:</h1>
-            <p class="about">
-                Desenvolvedor apaixonado por tecnologia, em constante evolução e
-                movido pelo desafio de transformar ideias em soluções eficientes.
-                Comecei minha jornada no mundo da programação com foco em Java e
-                backend, e desde então venho mergulhando cada vez mais fundo nesse
-                universo.
 
-                <br /><br />Me formei em Análise e Desenvolvimento de Sistemas e venho
-                consolidando meus conhecimentos com projetos práticos e bootcamps,
-                especialmente com o ecossistema Spring (Boot, Security, Data JPA),
-                JUnit, JWT, Maven e MySQL. Além disso, estou explorando o front-end
-                com HTML, CSS, JavaScript, sempre buscando me tornar um desenvolvedor
-                mais completo.
-                <br /><br />Possuo experiência com metodologias ágeis como Scrum e Kanban, além de trabalhar
-                atualmente com SEO, WordPress, Shopify, Vtex, entre outras plataformas. Sou
-                dedicado, proativo e sempre disposto a aprender novas tecnologias e     ferramentas que possam agregar valor aos meus projetos.
-                <br /><br />Tenho repositórios públicos no GitHub que mostram minha
-                evolução, com destaque para APIs RESTful com boas práticas, segurança,
-                testes e deploy em produção. Também estou desenvolvendo produtos e
-                interfaces com foco em experiência do usuário e valor real para o
-                mercado.
+  <main>
+    <div class="container">
+      <h1>Sobre mim</h1>
 
-                <br /><br />No tempo livre, gosto de jogos online, séries e filmes,
-                além de me aventurar na cozinha. Acredito que a criatividade e a
-                curiosidade são essenciais para um bom desenvolvedor, e estou sempre
-                em busca de aprender algo novo.
-            </p>
-              <section class="agent">
-            
-            <input type="text" id="userAgent" placeholder="Pergunte algo sobre o João..." />
-            <button id="response">Perguntar</button>
-            <div id="pResponse">
-                <p>
-                    <span id="responseText">Respostas do agente aparecerão aqui...</span>
-                </p>
-            </div>
-        
-        </section>
+      <section class="about-section">
+        <!-- Texto Sobre Mim -->
+        <div class="about-text">
+          <p>
+            Desenvolvedor apaixonado por tecnologia, em constante evolução e
+            movido pelo desafio de transformar ideias em soluções eficientes.
+            Comecei minha jornada no mundo da programação com foco em Java e
+            backend, e desde então venho mergulhando cada vez mais fundo nesse
+            universo.
+          </p>
+          <p>
+            Me formei em Análise e Desenvolvimento de Sistemas e venho
+            consolidando meus conhecimentos com projetos práticos e bootcamps,
+            especialmente com o ecossistema Spring (Boot, Security, Data JPA),
+            JUnit, JWT, Maven e MySQL. Além disso, estou explorando o front-end
+            com HTML, CSS, JavaScript, sempre buscando me tornar um desenvolvedor
+            mais completo.
+          </p>
+          <p>
+            Possuo experiência com metodologias ágeis como Scrum e Kanban, além
+            de trabalhar atualmente com SEO, WordPress, Shopify, Vtex, entre
+            outras plataformas. Sou dedicado, proativo e sempre disposto a
+            aprender novas tecnologias e ferramentas que possam agregar valor aos
+            meus projetos.
+          </p>
+          <p>
+            Tenho repositórios públicos no GitHub que mostram minha evolução, com
+            destaque para APIs RESTful com boas práticas, segurança, testes e
+            deploy em produção. Também estou desenvolvendo produtos e interfaces
+            com foco em experiência do usuário e valor real para o mercado.
+          </p>
+          <p>
+            No tempo livre, gosto de jogos online, séries e filmes, além de me
+            aventurar na cozinha. Acredito que a criatividade e a curiosidade são
+            essenciais para um bom desenvolvedor, e estou sempre em busca de
+            aprender algo novo.
+          </p>
         </div>
-      
-    </main>
- <footer>
-        <ul>
-            <li>
-                
-                <a href="https://www.linkedin.com/in/joaoriccideveloper/" target="_blank"> <img src="../media/image/icons/linkedin.png" alt="icone linkedin" /> Linkedin</a>
-            </li>
-            <li>
-                
-                <a href="https://www.instagram.com/joaoriccidev" target="_blank"><img src="../media/image/icons/instagram.png" alt="icone Instagram" />Instagram</a>
-            </li>
-            <li>
-                
-                <a href="https://github.com/ricciDeveloper" target="_blank"><img src="../media/image/icons/github-sign.png" alt="icone GitHub" />GitHub</a>
-            </li>
-        </ul>
-        <div class="rightsReserve">
-            <p>
-                &copy; 2025 João Ricci. Todos os direitos reservados.
-            </p>
+
+        <!-- Chat do agente -->
+        <div class="about-agent">
+          <h2>Converse com meu agente</h2>
+          <input type="text" id="userAgent" placeholder="Pergunte algo sobre o João..." />
+          <button id="response">Perguntar</button>
+          <div id="pResponse">
+            <p><span id="responseText">Respostas do agente aparecerão aqui...</span></p>
+          </div>
         </div>
-    </footer>
-    <script src="../js/script.js" defer></script>
-    <script src="../js/agentFront.js"></script>
-    <script src="../js/backAgent.js"></script>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/joaoriccideveloper/" target="_blank">
+          <img src="../media/image/icons/linkedin.png" alt="icone linkedin" />LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/joaoriccidev" target="_blank">
+          <img src="../media/image/icons/instagram.png" alt="icone Instagram" />Instagram
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/ricciDeveloper" target="_blank">
+          <img src="../media/image/icons/github-sign.png" alt="icone GitHub" />GitHub
+        </a>
+      </li>
+    </ul>
+    <div class="rightsReserve">
+      <p>&copy; 2025 João Ricci. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js" defer></script>
+  <script src="../js/agentFront.js"></script>
+  <script src="../js/backAgent.js"></script>
 </body>
 </html>

@@ -1,14 +1,27 @@
-@import url('components/_header.css');
 @import url('components/_footer.css');
+@import url('components/_header.css');
 
+/* Estilos globais */
 body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #121212;
   color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+main {
+  flex: 1; /* Permite que o main se expanda para ocupar o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container principal com Flexbox para layout de 2 colunas */
 .container {
   display: flex;
   flex-direction: column;
@@ -16,45 +29,70 @@ body {
   justify-content: flex-start;
   padding: 2rem 1rem;
   background-color: #1e1e1e;
-  min-height: 100vh;
+  flex: 1;
 }
 
 .container h1 {
   font-size: 2.5rem;
   color: #00d8ff;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
   text-align: center;
 }
 
-.container p.about {
-  font-size: 1.1rem;
-  color: #cccccc;
-  margin-bottom: 2rem;
-  padding: 2rem;
+/* Seção principal de conteúdo */
+.about-section {
+  display: flex;
+  justify-content: center; /* Centraliza as caixas horizontalmente */
+  gap: 2rem; /* Espaço entre as caixas */
   width: 100%;
-  max-width: 900px;
-  line-height: 1.8;
+  max-width: 1200px; /* Limite de largura para o conteúdo */
+  flex-wrap: wrap; /* Permite que as caixas quebrem para a próxima linha em telas pequenas */
+}
+
+/* Caixa "Sobre mim" (coluna da esquerda) */
+.about-text {
+  flex: 1;
+  min-width: 300px;
   background: #2c2c2c;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 216, 255, 0.1);
   box-sizing: border-box;
 }
 
-/* Estilo do Agent */
-.agent {
+.about-text p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0; /* Remove a margem inferior do último parágrafo */
+}
+
+/* Caixa do agente (coluna da direita) */
+.about-agent {
+  flex: 1;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 600px;
   background: #2c2c2c;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 216, 255, 0.2);
   box-sizing: border-box;
 }
 
-.agent input[type="text"] {
+.about-agent h2 {
+  font-size: 1.5rem;
+  color: #00d8ff;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.about-agent input[type="text"] {
   padding: 0.8rem 1rem;
   border-radius: 8px;
   border: none;
@@ -65,11 +103,11 @@ body {
   color: #f5f5f5;
 }
 
-.agent input[type="text"]::placeholder {
+.about-agent input[type="text"]::placeholder {
   color: #999999;
 }
 
-.agent button {
+.about-agent button {
   padding: 0.8rem;
   border: none;
   border-radius: 8px;
@@ -80,17 +118,17 @@ body {
   transition: background 0.3s ease;
 }
 
-.agent button:hover {
+.about-agent button:hover {
   background-color: #00b8d4;
 }
 
-/* Área de resposta - estilo chat */
+/* Área de resposta - estilo chat de mensagens */
 #pResponse {
   margin-top: 1.5rem;
   background-color: #1b1b1b;
   padding: 1rem;
   border-radius: 10px;
-  max-height: 300px;
+  max-height: 400px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -99,7 +137,7 @@ body {
 
 /* Balões de chat */
 .user-message {
-  align-self: flex-end;
+  align-self: flex-end; /* Alinha a mensagem do usuário à direita */
   background-color: #00d8ff;
   color: #121212;
   padding: 0.8rem 1rem;
@@ -109,7 +147,7 @@ body {
 }
 
 .agent-response {
-  align-self: flex-start;
+  align-self: flex-start; /* Alinha a resposta do agente à esquerda */
   background-color: #3a3a3a;
   color: #f5f5f5;
   padding: 0.8rem 1rem;
@@ -118,52 +156,10 @@ body {
   word-wrap: break-word;
 }
 
-/* RESPONSIVIDADE */
-
-/* Tablets */
+/* Adaptações para telas menores */
 @media (max-width: 768px) {
-  .container p.about {
-    font-size: 1rem;
-    padding: 1.5rem;
-    width: 95%;
-  }
-
-  .agent {
-    width: 95%;
-  }
-
-  #pResponse {
-    max-height: 250px;
-  }
-}
-
-/* Smartphones */
-@media (max-width: 480px) {
-  .container h1 {
-    font-size: 2rem;
-  }
-
-  .container p.about {
-    font-size: 0.95rem;
-    padding: 1rem;
-  }
-
-  .agent input[type="text"] {
-    font-size: 0.95rem;
-    padding: 0.7rem 1rem;
-  }
-
-  .agent button {
-    font-size: 0.95rem;
-    padding: 0.7rem;
-  }
-
-  #pResponse {
-    max-height: 200px;
-  }
-
-  .user-message, .agent-response {
-    max-width: 90%;
-    font-size: 0.95rem;
+  .about-section {
+    flex-direction: column; /* Em telas pequenas, as caixas ficam uma abaixo da outra */
+    gap: 1.5rem;
   }
 }

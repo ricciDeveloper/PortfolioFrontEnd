@@ -1,7 +1,107 @@
 @import url('components/_header.css');
 @import url('components/_footer.css');
-@import url('components/_dropdown.css');
 
-main{
-    height: 80vh;
+/* Estilos globais */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+    
+    min-height: 100vh;
+    height: 100%;
+    flex: 1; /* Permite que o main se expanda para ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    padding: 2rem 1rem;
+    background-color: #121212;
+}
+
+/* Container principal dos contatos */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+  background-color: #1e1e1e;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 216, 255, 0.2);
+}
+
+/* Título da seção */
+.container h1 {
+  font-size: 2.5rem;
+  color: #00d8ff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Lista de contatos */
+.contatos ul {
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Espaço entre os itens da lista */
+  width: 100%;
+}
+
+/* Estilo de cada item de contato */
+.contatos li {
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contatos li:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+  box-shadow: 0 5px 15px rgba(0, 216, 255, 0.3);
+}
+
+.contatos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.contatos a img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .contatos a {
+    font-size: 1rem;
+    padding: 1rem;
+  }
 }
