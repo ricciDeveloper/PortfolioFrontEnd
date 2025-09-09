@@ -1,63 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos - Joao Ricci</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos - João Ricci</title>
 
-    <!-- Styles-->
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/projetos.css">
-</head>
-<body>
-    <header>
-        <nav class="navigator">
-            <ul>
-                <li><a href="../../Index.html">Home</a></li>
-                <li><a href="about.html">Sobre mim</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
-            </ul>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/projetos.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <a href="../../Index.html" class="logo">João Ricci</a>
+        <nav class="nav">
+          <ul>
+            <li><a href="../../Index.html">Home</a></li>
+            <li><a href="about.html">Sobre mim</a></li>
+            <li><a href="projetos.html" class="active">Projetos</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+          </ul>
         </nav>
-
-        "<img src="../media/image/perfil.jpg" alt=" perfil joão ricci">
+      </div>
     </header>
 
     <main>
-        <div class="container">
-                <ul>
-                    <li><img src="../media/image/gerador.png" alt="projeto de gerador de relatórios para PDF"><a href="https://gerador-relatorios-canalverdepdf.vercel.app/" target="_blank">Gerador de Relatórios - Canal Verde</a></li>
-                    <li><img src="../media/image/landingPage.png" alt="imagem do website do croches da cris"><a href="https://crochesdacris.vercel.app/" target="_blank">Landing Page - Crochês da Cris</a></li>
-                    <li><img src="../media/image/taskTracking.png" alt="imagem do projeto de task tracking"><a href="https://task-tracking-rosy.vercel.app/">To Do List - Time tracking</a></img></li>
-                    <li><img src="../media/image/icons/github-sign.png" alt="icone do github repositórios"><a href="https://github.com/ricciDeveloper/SpringWebRestApi" target="_blank">Spring Web API</a></li>
-                    <li><img src="../media/image/icons/github-sign.png" alt="icone do github repositórios"><a href="https://github.com/ricciDeveloper/APIRestSpringSecurity" target="_blank">API RESTful com SpringSecurity</a></li>
-                    <li><img src="../media/image/icons/github-sign.png" alt="icone do github repositórios"><a href="https://github.com/ricciDeveloper/AutomacaoRelatoriosPY" target="_blank">Automação Python + Sellenium</a></li>
-                    <li><img src="../media/image/icons/github-sign.png" alt="icone do github repositórios"><a href="https://github.com/ricciDeveloper/Multiverso-SpiderMan" target="_blank">Multiverso-SpiderMan</a></li>
-                    <li><img src="../media/image/icons/github-sign.png" alt="icone do github repositórios"><a href="https://github.com/ricciDeveloper/API-ListaContatos" target="_blank">Lista telefônica</a></li>
+      <h1 class="page-title">Meus Projetos</h1>
+      <p class="page-subtitle">
+        Confira alguns dos trabalhos que desenvolvi e as tecnologias que
+        utilizei.
+      </p>
 
-                </div>
-    </main>
- <footer>
-        <ul>
-            <li>
-                
-                <a href="https://www.linkedin.com/in/joaoriccideveloper/" target="_blank"> <img src="assets/media/image/icons/linkedin.png" alt="icone linkedin" /> Linkedin</a>
-            </li>
-            <li>
-                
-                <a href="https://www.instagram.com/joaoriccidev" target="_blank"><img src="assets/media/image/icons/instagram.png" alt="icone Instagram" />Instagram</a>
-            </li>
-            <li>
-                
-                <a href="https://github.com/ricciDeveloper" target="_blank"><img src="assets/media/image/icons/github-sign.png" alt="icone GitHub" />GitHub</a>
-            </li>
-        </ul>
-        <div class="rightsReserve">
+      <div class="projects-grid">
+        <div class="project-card">
+          <img
+            src="../media/image/gerador.png"
+            alt="projeto de gerador de relatórios para PDF"
+          />
+          <div class="project-content">
+            <h3>Gerador de Relatórios - Canal Verde</h3>
             <p>
-                &copy; 2025 João Ricci. Todos os direitos reservados.
+              Uma ferramenta web para gerar relatórios detalhados em formato
+              PDF.
             </p>
+            <div class="project-links">
+              <a
+                href="https://gerador-relatorios-canalverdepdf.vercel.app/"
+                target="_blank"
+                >Ver Projeto</a
+              >
+              <a href="#">Código</a>
+            </div>
+          </div>
         </div>
+
+        <div class="project-card">
+          <img
+            src="../media/image/landingPage.png"
+            alt="imagem do website do croches da cris"
+          />
+          <div class="project-content">
+            <h3>Landing Page - Crochês da Cris</h3>
+            <p>
+              Landing page moderna e responsiva para um negócio de artesanato.
+            </p>
+            <div class="project-links">
+              <a href="https://crochesdacris.vercel.app/" target="_blank"
+                >Ver Projeto</a
+              >
+              <a href="#">Código</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="../media/image/taskTracking.png"
+            alt="imagem do projeto de task tracking"
+          />
+          <div class="project-content">
+            <h3>To Do List - Time Tracking</h3>
+            <p>
+              Um aplicativo de lista de tarefas com funcionalidade de
+              rastreamento de tempo.
+            </p>
+            <div class="project-links">
+              <a href="https://task-tracking-rosy.vercel.app/" target="_blank"
+                >Ver Projeto</a
+              >
+              <a href="#">Código</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="../media/image/icons/github-sign.png"
+            alt="icone do github repositórios"
+          />
+          <div class="project-content">
+            <h3>Spring Web API</h3>
+            <p>
+              Uma API RESTful desenvolvida com o framework Spring para backend.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ricciDeveloper/SpringWebRestApi"
+                target="_blank"
+                >Ver Repositório</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="../media/image/icons/github-sign.png"
+            alt="icone do github repositórios"
+          />
+          <div class="project-content">
+            <h3>API RESTful com Spring Security</h3>
+            <p>Exemplo de API segura com autenticação e autorização.</p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ricciDeveloper/APIRestSpringSecurity"
+                target="_blank"
+                >Ver Repositório</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="../media/image/icons/github-sign.png"
+            alt="icone do github repositórios"
+          />
+          <div class="project-content">
+            <h3>Automação Python + Selenium</h3>
+            <p>
+              Scripts Python para automação de tarefas web e geração de
+              relatórios.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ricciDeveloper/AutomacaoRelatoriosPY"
+                target="_blank"
+                >Ver Repositório</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="../media/image/icons/github-sign.png"
+            alt="icone do github repositórios"
+          />
+          <div class="project-content">
+            <h3>Multiverso-SpiderMan</h3>
+            <p>
+              Uma página de projeto divertida e interativa sobre o universo do
+              Homem-Aranha.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ricciDeveloper/Multiverso-SpiderMan"
+                target="_blank"
+                >Ver Repositório</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="../media/image/icons/github-sign.png"
+            alt="icone do github repositórios"
+          />
+          <div class="project-content">
+            <h3>Lista Telefônica</h3>
+            <p>API para gerenciar e armazenar uma lista de contatos.</p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ricciDeveloper/API-ListaContatos"
+                target="_blank"
+                >Ver Repositório</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="https://linkedin.com/in/joaoriccideveloper" target="_blank">
+            <img src="../media/image/icons/linkedin.png" alt="LinkedIn" />
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/seuperfil" target="_blank">
+            <img src="../media/image/icons/instagram.png" alt="Instagram" />
+            <span>Instagram</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ricciDeveloper" target="_blank">
+            <img src="../media/image/icons/github-sign.png" alt="GitHub" />
+            <span>GitHub</span>
+          </a>
+        </li>
+      </ul>
+      <div class="rightsReserve">
+        <p>© 2025 João Ricci. Todos os direitos reservados.</p>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>

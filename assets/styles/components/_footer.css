@@ -18,37 +18,40 @@ footer ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* permite quebra em telas menores */
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem; /* mais espaçamento entre os itens */
 }
 
 footer ul li {
-    margin: 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 footer ul li img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
 
 footer ul li a {
+    display: flex; /* faz o ícone e o texto ficarem alinhados */
+    align-items: center;
+    gap: 6px; /* espaçamento ícone-texto */
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-    color: #007bff;
+    color: #00bfff; /* azul mais moderno no hover */
 }
 
 .rightsReserve p {
-    font-size: 0.8rem;
-    color: #777;
+    font-size: 0.85rem;
+    color: #aaa;
     margin-top: 1rem;
+    text-align: center;
 }
